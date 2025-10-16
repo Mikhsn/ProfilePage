@@ -1,0 +1,101 @@
+body {
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-container {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  max-width: 850px;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.profile-image {
+  background: linear-gradient(135deg, #007bff, #6610f2);
+  flex: 1 1 300px;
+  text-align: center;
+  color: white;
+  padding: 40px 20px;
+}
+
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  transition: transform 0.4s;
+}
+
+.profile-image img:hover {
+  transform: scale(1.1);
+}
+
+.profile-image h3 {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.profile-content {
+  flex: 1 1 400px;
+  padding: 40px;
+}
+
+.profile-content h4 {
+  font-weight: 600;
+  color: #0d6efd;
+}
+
+.info-item {
+  margin-bottom: 12px;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #444;
+}
+
+.btn-custom {
+  background: linear-gradient(135deg, #6610f2, #0d6efd);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 25px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  color: #eee;
+  font-size: 14px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
